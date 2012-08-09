@@ -1,0 +1,39 @@
+{
+  "name": "amdjst",
+  "description": "@TODO",
+  "version": "0.1.0",
+  "homepage": "@TODO",
+  "author": {
+    "name": "Jarrod Overson",
+    "url": "http://jarrodoverson.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@TODO"
+  },
+  "bugs": {
+    "url": "@TODO"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": "bin/amdjst",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt --base ./test/ --config ./test/grunt.js"
+  },
+  "dependencies": {
+    "grunt": "~0.3.10"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.10"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
