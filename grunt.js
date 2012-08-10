@@ -1,9 +1,16 @@
 module.exports = function(grunt) {
-  "use strict";
 
+  // Project configuration.
   grunt.initConfig({
+    test: {
+      files: ['test/**/*.js']
+    },
     lint: {
-      all: ["grunt.js", "tasks/*.js", "test/*.js"]
+      files: ['grunt.js', 'tasks/**/*.js', 'test/**/*.js']
+    },
+    watch: {
+      files: '<config:lint.files>',
+      tasks: 'default'
     },
     jshint: {
       options: {
@@ -19,10 +26,15 @@ module.exports = function(grunt) {
         eqnull: true,
         node: true,
         es5: true
-      }
+      },
+      globals: {}
     }
   });
 
-  grunt.registerTask("default", "lint");
-  grunt.loadTasks("tasks");
+  // Load local tasks.
+  grunt.loadTasks('tasks');
+
+  // Default task.
+  grunt.registerTask('default', 'lint test');
+
 };
