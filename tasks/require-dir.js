@@ -34,7 +34,8 @@ module.exports = function(grunt) {
       '  return {'
     ];
 
-    var prefix = options.plugin ? options.plugin + '!' : '';
+    var pluginPrefix = options.plugin ? options.plugin + '!' : '';
+    var directoryPrefix = options.prefixDir || '';
     var lastDepth = 0;
 
     function indent(num) { return grunt.utils.repeat(num,'  ')};
@@ -43,7 +44,7 @@ module.exports = function(grunt) {
       key = key.replace(/\.[^\.]*$/,'');
       if (depth > lastDepth)      output.push(indent(depth) + "'" + parentKey + '\' : { ' )
       else if (depth < lastDepth) output.push(indent(depth + 1) + '}, ' )
-      output.push(indent(depth + 1) + "'" + key + '\' : require("' + prefix + val + '"),');
+      output.push(indent(depth + 1) + "'" + key + '\' : require("' + pluginPrefix + directoryPrefix + val + '"),');
       lastDepth = depth;
     })
 

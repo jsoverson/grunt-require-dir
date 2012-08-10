@@ -51,7 +51,7 @@ exports['require-dir'] = {
     var options = {
       plugin    : 'tpl',
       baseDir   : 'test/fixtures/texttree/',
-      prefixDir : 'texttree'
+      prefixDir : 'customDir/'
     };
     var files = [
       'test/fixtures/texttree/bar.tmpl',
@@ -64,11 +64,11 @@ exports['require-dir'] = {
     var define = function(fn) {return fn(require)};
     var expected = define(function(require){
         return {
-          'bar' : require('tpl!bar.tmpl'),
-          'foo' : require('tpl!foo.tmpl'),
+          'bar' : require('tpl!customDir/bar.tmpl'),
+          'foo' : require('tpl!customDir/foo.tmpl'),
           'A' : {
-            'one' : require('tpl!A/one.tmpl'),
-            'two' : require('tpl!A/two.tmpl')
+            'one' : require('tpl!customDir/A/one.tmpl'),
+            'two' : require('tpl!customDir/A/two.tmpl')
           }
         }
       });
