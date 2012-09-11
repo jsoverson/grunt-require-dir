@@ -10,7 +10,7 @@ var helpers = require('./helpers');
 module.exports = function(grunt) {
   "use strict";
 
-  grunt.registerMultiTask("require-dir", "Process a directory of AMD modules and generate an AMD compatible container", function() {
+  grunt.registerMultiTask("require-dir", "Process a directory of files and generate an AMD compatible container", function() {
     var config = this.data;
 
     grunt.verbose.writeflags(config, "Options");

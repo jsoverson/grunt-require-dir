@@ -1,6 +1,6 @@
 {
   "name": "grunt-require-dir",
-  "description": "Process a directory of AMD modules and generate an AMD compatible container",
+  "description": "Process a directory of files and generate an AMD compatible container",
   "version": "0.3.0",
   "homepage": "https://github.com/joverson/grunt-require-dir",
   "author": {
