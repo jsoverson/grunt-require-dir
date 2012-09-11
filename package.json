@@ -1,7 +1,7 @@
 {
   "name": "grunt-require-dir",
-  "description": "The best sample grunt tasks ever.",
-  "version": "0.1.0",
+  "description": "Process a directory of AMD modules and generate an AMD compatible container",
+  "version": "0.3.0",
   "homepage": "https://github.com/joverson/grunt-require-dir",
   "author": {
     "name": "Jarrod Overson",
@@ -36,6 +36,10 @@
     "grunt": "~0.3.12"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "requirejs",
+    "amd",
+    "module",
+    "client"
   ]
 }
