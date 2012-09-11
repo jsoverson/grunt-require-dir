@@ -12,6 +12,15 @@ module.exports = function(grunt) {
       files: '<config:lint.files>',
       tasks: 'default'
     },
+    'require-dir' : {
+      all : {
+        plugin    : 'tpl',
+        src       : 'test/fixtures/texttree/**/*.tmpl',
+        baseDir   : 'test/fixtures/texttree/',
+        prefixDir : 'customDir/',
+        dest      : 'test/fixtures/texttree.js'
+      }
+    },
     jshint: {
       options: {
         curly: true,
