@@ -20,6 +20,8 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
+var helpers = require('../tasks/helpers');
+
 exports['require-dir'] = {
   setUp: function(done) {
     // setup here
@@ -42,7 +44,7 @@ exports['require-dir'] = {
         'two.tmpl' : 'A/two.tmpl'
       }
     }
-    var actual = grunt.helper('directory-tree', files, baseDir);
+    var actual = helpers.directoryTree(files, baseDir);
     test.deepEqual(actual, expected, 'Creates tree output');
     test.done();
   },
@@ -72,7 +74,7 @@ exports['require-dir'] = {
           }
         }
       });
-    var actualSource = grunt.helper('require-tree', files, options);
+    var actualSource = helpers.requireTree(files, options);
     var actual = eval(actualSource);
     test.deepEqual(actual, expected, 'Creates correct response');
     test.done();
