@@ -75,4 +75,4 @@ define(function(require){
 
 ## License
 Copyright (c) 2012 Jarrod Overson  
-Licensed under the MIT license.
+Licensed under the [MIT license](https://github.com/jsoverson/grunt-require-dir/blob/master/LICENSE-MIT).
