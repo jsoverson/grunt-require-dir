@@ -67,7 +67,14 @@ define(function(require){
   };
 });
 ```
+Which, when required, will allow you to access modules in the same structure as your directory, e.g.
 
+```javascript
+define(['texttree.js'],function(texttree){
+  texttree.A.one; // A/one.tmpl
+  texttree.bar; // bar.tmpl
+})
+```
 
 ## Release History
 
