@@ -2,22 +2,22 @@
   "name": "grunt-require-dir",
   "description": "Process a directory of files and generate an AMD compatible container",
   "version": "0.3.0",
-  "homepage": "https://github.com/joverson/grunt-require-dir",
+  "homepage": "https://github.com/jsoverson/grunt-require-dir",
   "author": {
     "name": "Jarrod Overson",
     "email": "jsoverson@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/joverson/grunt-require-dir.git"
+    "url": "git://github.com/jsoverson/grunt-require-dir.git"
   },
   "bugs": {
-    "url": "https://github.com/joverson/grunt-require-dir/issues"
+    "url": "https://github.com/jsoverson/grunt-require-dir/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/joverson/grunt-require-dir/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jsoverson/grunt-require-dir/blob/master/LICENSE-MIT"
     }
   ],
   "main": "grunt.js",
